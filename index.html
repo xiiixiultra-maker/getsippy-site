@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sippy — the alarm that keeps coming back until you sip</title>
+<meta name="description" content="Sippy is an iOS alarm that only clears when the camera sees you take a real sip of water. Enforced by a very determined axolotl. Coming soon.">
+<style>
+  :root{
+    --water:#2EC4E6; --ink:#08263B; --deep:#1188AB; --foam:#EAF9FD; --coral:#FF7A6B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","Segoe UI",Roboto,sans-serif;
+    background:var(--ink); color:var(--foam);
+    min-height:100vh; display:flex; flex-direction:column;
+  }
+  main{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:3rem 1.5rem}
+  .drop{font-size:4rem; line-height:1; margin-bottom:1rem}
+  h1{font-size:clamp(2.5rem,8vw,4rem); letter-spacing:-.02em; color:#fff}
+  .tag{font-size:clamp(1.05rem,3.5vw,1.35rem); color:var(--water); margin-top:.75rem; max-width:34ch}
+  .sub{color:var(--foam); opacity:.75; margin-top:1.25rem; max-width:44ch; font-size:1rem; line-height:1.55}
+  .soon{display:inline-block; margin-top:2rem; background:var(--water); color:var(--ink);
+    font-weight:700; padding:.7rem 1.4rem; border-radius:999px; font-size:.95rem}
+  .wave{height:90px; width:100%; overflow:hidden; line-height:0}
+  .wave svg{width:100%; height:100%}
+  footer{background:var(--water); color:var(--ink); text-align:center; padding:1.25rem 1rem 2rem; font-size:.9rem}
+  footer a{color:var(--ink); font-weight:600; text-decoration:underline; text-underline-offset:3px}
+  footer .links{display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:.5rem}
+</style>
+</head>
+<body>
+<main>
+  <div class="drop">💧</div>
+  <h1>Sippy</h1>
+  <p class="tag">The alarm that keeps coming back until you sip.</p>
+  <p class="sub">A real alarm. A camera check. A very determined axolotl. Your sip is verified on your phone — nothing is ever recorded, stored, or uploaded.</p>
+  <span class="soon">Coming soon to the App&nbsp;Store</span>
+</main>
+<div class="wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,45 C240,90 480,0 720,45 C960,90 1200,0 1440,45 L1440,90 L0,90 Z" fill="#2EC4E6"/></svg></div>
+<footer>
+  <div class="links">
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Use</a>
+    <a href="mailto:support@getsippy.app">support@getsippy.app</a>
+  </div>
+  <div>© 2026 Sippy. Be nice to your water bottle.</div>
+</footer>
+</body>
+</html>
