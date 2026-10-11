@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sippy — Privacy Policy</title>
+<meta name="description" content="How Sippy handles your information: everything stays on your iPhone, the camera feed is never recorded, and there are no accounts, ads, analytics or tracking.">
 <meta name="robots" content="index,follow">
 <style>
-  :root{--water:#2EC4E6; --ink:#08263B; --deep:#1188AB; --foam:#EAF9FD}
+  :root{--water:#2EC4E6; --ink:#08263B; --deep:#0B6E8C; --foam:#EAF9FD}
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Rounded","Segoe UI",Roboto,sans-serif;
     background:#fff; color:var(--ink); line-height:1.65}
@@ -18,68 +19,126 @@
   h2{color:var(--deep); font-size:1.3rem; margin:2rem 0 .6rem}
   p, li{margin-bottom:.75rem}
   ul{padding-left:1.4rem}
+  ul ul{margin-top:.5rem}
   .lede{background:var(--foam); border-left:4px solid var(--water); padding:1rem 1.25rem; border-radius:8px; font-size:1.05rem}
-  a{color:var(--deep)}
+  a{color:var(--deep); overflow-wrap:break-word}
+  a:focus-visible{outline:3px solid currentColor; outline-offset:3px; border-radius:2px}
   footer{text-align:center; padding:2rem 1rem; background:var(--foam); font-size:.9rem}
+  footer p{margin:.25rem 0}
 </style>
 </head>
 <body>
 <header>
-  <a href="/">💧 Sippy</a>
+  <a href="/"><span aria-hidden="true">💧 </span>Sippy</a>
   <h1>Privacy Policy</h1>
-  <div class="date">Last updated: August 29, 2026 · Effective: August 29, 2026</div>
+  <div class="date">Last updated: October 11, 2026 · Effective: October 11, 2026</div>
 </header>
 <main>
-  <p class="lede"><strong>The short version:</strong> Sippy runs on your phone. The camera check happens entirely on your device and is never recorded, stored, or uploaded. We do not sell your data. We do not have accounts, and we cannot see your sips.</p>
+  <p class="lede"><strong>The short version:</strong> Sippy runs on your iPhone. It has no accounts, no ads, no analytics, no tracking and no server, and nothing leaves your device under Sippy's control. The camera sip check is analyzed live on your phone, and nothing from the camera is recorded, stored or sent. We only get information you choose to send us, like a support email.</p>
 
   <h2>Who we are</h2>
-  <p>Sippy is operated by an independent developer based in Florida, USA (“we”). Questions: <a href="mailto:support@getsippy.app"><strong>support@getsippy.app</strong></a>.</p>
+  <p>Sippy is made by <strong>Remmy Rivera</strong>, an independent developer in Florida, USA (“we” or “us”). We are responsible for the small amount of personal information described here (under EU and UK law, we are the “controller”). This policy covers the Sippy iPhone app, its widgets and this website, getsippy.app. Contact: <a href="mailto:support@getsippy.app">support@getsippy.app</a>.</p>
 
-  <h2>The camera</h2>
-  <p>Sippy uses your front-facing camera only during a sip check, and only while that check is on screen.</p>
+  <h2>What Sippy sends: nothing</h2>
+  <p>This version of Sippy has no analytics, advertising or tracking tools, no accounts and no server, and it doesn't use Apple Health. Apart from purchases, refund requests and the age check, which Apple handles (see <a href="#purchases">Purchases</a> and <a href="#children">Children and teens</a>), Sippy doesn't send anything off your phone. In TestFlight builds you can choose to share logs (see <a href="#logs">Diagnostic logs</a>). If we ever add analytics, we will update this policy before that version ships.</p>
+
+  <h2>The camera and motion sensors</h2>
   <ul>
-    <li>Video frames are analyzed <strong>live, in memory, on your device</strong>.</li>
-    <li>Frames are <strong>never written to storage</strong>, never sent to a server, never sent to us, and never sent to any third party.</li>
-    <li>No face data, facial geometry, or biometric template is created, stored, or transmitted.</li>
-    <li>The camera session stops the moment the check ends.</li>
+    <li>Sippy uses the front camera only while a sip check is on screen. The camera turns off when the check closes or Sippy leaves the screen.</li>
+    <li>Apple's Vision framework analyzes each frame in memory, on your iPhone, to find a face, facial landmark points (such as your lips), the pose of your hand, and whether your bottle or straw is at your mouth. The phone's motion sensors (Core Motion) help detect the tilt of a sip.</li>
+    <li><strong>Nothing from the camera is recorded, stored or sent.</strong> There are no photos and no video, and no face print or other biometric template is kept. Each frame is thrown away as soon as it has been analyzed, and nothing is used to recognize who you are.</li>
+    <li>Sippy also uses the motion sensors to give the app's water animation a slight tilt effect. That data isn't stored either.</li>
   </ul>
-  <p>What we do keep, on your device: whether a check passed or failed, which leniency mode was used, how long it took, and a rough lighting category. These help us improve reliability. They contain no imagery.</p>
+  <p>Sippy does keep a log of each check's outcome on your phone, with no images. It's described under <a href="#logs">Diagnostic logs</a>.</p>
 
-  <h2>What is stored on your device</h2>
-  <p>Your hydration log, streaks, shields and tokens, bottle profiles, alarm windows, and settings are stored <strong>locally on your iPhone</strong> using Apple's on-device storage. Deleting the app deletes this data.</p>
-
-  <h2>Anonymous usage analytics</h2>
-  <p>To understand whether Sippy's features work reliably, the app may send <strong>anonymous event counts</strong> — for example, “an alarm fired,” “a sip check passed,” or “a check failed in low light” — to our privacy-focused analytics provider, TelemetryDeck. These events are simple counters: they contain <strong>no imagery, no face data, no personal identifiers, no advertising IDs, and no location</strong>, and they are not used to track you across apps or websites. TelemetryDeck's privacy policy: <a href="https://telemetrydeck.com/privacy/">telemetrydeck.com/privacy</a>.</p>
-
-  <h2>Apple Health</h2>
-  <p>If you turn it on, Sippy writes water-intake entries to Apple Health. Sippy does not read your other Health data. Health data is governed by Apple's own privacy protections and is never transmitted to us or used for advertising, marketing, or sold to anyone. You can revoke access at any time in the Health app.</p>
-
-  <h2>Purchases and subscriptions</h2>
-  <p>Purchases are processed by <strong>Apple</strong>. We use <strong>RevenueCat</strong> to manage subscription status and purchase records. That means RevenueCat processes purchase history, a randomly generated app user ID, and basic device/country information on our behalf. We never receive your payment card details. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
-  <p>This is why our App Store privacy label declares <strong>Purchases</strong>.</p>
-
-  <h2>Notifications and alarms</h2>
-  <p>Sippy schedules alarms and notifications on your device. These are handled by iOS and require no server.</p>
-
-  <h2>What we do NOT do</h2>
+  <h2>What Sippy keeps on your iPhone</h2>
+  <p>Sippy stores the following on your iPhone only:</p>
   <ul>
-    <li>No advertising, no ad networks, no tracking across apps or websites, no data brokers.</li>
-    <li>No sale or sharing of personal information (as defined by the CCPA/CPRA).</li>
-    <li>No account required, no email collected to use the app.</li>
+    <li><strong>Your hydration:</strong> your log and check-ins (with their times and whether each was camera-verified or on your honor), your daily goal, and your streaks, shields and reef pieces.</li>
+    <li><strong>Your schedule and alarms:</strong> wake and sleep times, how many check-ins a day you want (intensity), alarm persistence and sound, and whether alarms are paused.</li>
+    <li><strong>Your bottle:</strong> the bottle you picked, its size, any nickname you gave it, and whether it has a straw lid.</li>
+    <li><strong>Optional details:</strong> your activity level, weight and sex, if you enter them. They are used only to size your daily goal. You can change them anytime in You › Hydration, and clear weight (“Not set”) or sex (“Prefer not to say”).</li>
+    <li><strong>Hard Mode:</strong> whether it's on, the unlock fee you chose, your total unlock spend for each month, and Apple's transaction IDs for your unlock purchases (so each is counted once and Apple's refund sheet can find the latest).</li>
+    <li><strong>Renewal reminder:</strong> whether you turned it on, and whether you dismissed this year's reminder card.</li>
+    <li><strong>Diagnostic logs</strong> (see below).</li>
+    <li><strong>Widget snapshot:</strong> a small copy of today's progress and goal, your streak, your next check-in time, how many check-ins are planned and done, and whether alarms are paused. It's shared with Sippy's Home Screen and Lock Screen widgets through an App Group (a storage area on your phone that the app and its widgets share), so anyone who can see your screen can see it. The same area holds your alarm settings (Hard Mode on or off, persistence and sound), Sippy's bookkeeping for scheduled alarms (their IDs and how many times each was stopped) and whether Sippy Pro is active, so an alarm's Stop button works while the app is closed.</li>
+  </ul>
+  <p>All of this may be included in your own iCloud or computer backups, which Apple or your computer manage under your account. We can't access them. Deleting Sippy removes this data from your phone.</p>
+
+  <h2 id="logs">Diagnostic logs</h2>
+  <p>To help fix problems, Sippy keeps three short logs on your phone. They contain no photos, video or face data.</p>
+  <ul>
+    <li><strong>Sip-check log</strong> (your most recent 200 checks): the date and time; the result (for example passed, timed out, cancelled, honor button, emergency bypass, unlock fee paid or camera error); straw or open-top mode; how long the check took and which step it reached; how many seconds a face, a hand near your mouth, a covered mouth and a drinking tilt were detected, and the longest stretch they held together; how many camera frames were analyzed and how many had a face; the frame size and orientation; any camera start-up error; whether camera access was allowed; and the app version.</li>
+    <li><strong>Alarm log</strong> (the most recent 300 events): when alarms were scheduled, kept or cancelled, the next alarm time, why alarms were switched off (for example paused, no alarm permission or no subscription), errors reported by iOS, and each time you pressed Stop, with the app version.</li>
+    <li><strong>Purchase log</strong> (the most recent 300 events): purchase, subscription, restore and refund events, with Apple's product and transaction IDs, the outcome and the app version.</li>
+  </ul>
+  <p>In the App Store version of Sippy, there is no way to export these logs, and they are never sent to us. Only TestFlight beta versions (and the developer's own test builds) have a button to share them through the iOS share sheet. If a beta tester sends us a log, we treat it like a support email and use it only to fix bugs.</p>
+
+  <h2 id="purchases">Purchases</h2>
+  <p>Sippy Pro subscriptions and Hard Mode unlock fees are sold and processed entirely by <strong>Apple</strong> through the App Store. Sippy checks your purchase status with Apple on your device, using Apple's StoreKit. We never receive your name, email address, Apple Account details or payment details. Apple gives us sales reports that don't identify you. Apple's handling of your purchase is covered by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+  <h2>Alarms and notifications</h2>
+  <p>Sippy schedules its alarms on your iPhone with Apple's AlarmKit, and they can appear on your Lock Screen. If you allow notifications, the only notification Sippy sends is an optional reminder, scheduled on your phone, about 35 days before an annual subscription renews. No server is involved.</p>
+
+  <h2>Information we may receive</h2>
+  <ul>
+    <li><strong>Support emails.</strong> If you email <a href="mailto:support@getsippy.app">support@getsippy.app</a>, we receive your email address, your message and anything you attach. Porkbun, our domain registrar, forwards it to a Google (Gmail) inbox. We use it only to answer you, and we keep it no longer than 24 months after the conversation ends.</li>
+    <li><strong>Information from Apple.</strong> If you've chosen in iOS Settings to share analytics with app developers, Apple may give us crash reports and combined usage statistics that don't tell us who you are. You can turn this off in Settings › Privacy &amp; Security › Analytics &amp; Improvements. If you join the TestFlight beta, Apple also shares with us the name and email address you were invited with, plus any feedback, screenshots and crash reports you send. We use all of this only to run the beta and fix problems. It stays in Apple's App Store Connect, under Apple's rules for how long it's kept.</li>
   </ul>
 
-  <h2>Children</h2>
-  <p>Sippy is not directed at children under 13 and we do not knowingly collect personal information from them.</p>
+  <h2>This website</h2>
+  <p>getsippy.app is a plain static site hosted on GitHub Pages. It uses no cookies, analytics, pixels, external fonts or scripts. GitHub may log visitors' IP addresses for security and to keep the service running, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. We don't have access to those logs.</p>
 
-  <h2>Your rights</h2>
-  <p>Because your hydration data lives on your device, you control it — delete the app and it is gone. For purchase records held by Apple or RevenueCat, or to ask any privacy question, email <a href="mailto:support@getsippy.app"><strong>support@getsippy.app</strong></a> and we will respond within 30 days. Depending on where you live (for example California, or the EU/UK under GDPR), you may have rights to access, correct, delete, or port data, and to complain to a supervisory authority.</p>
+  <h2>Who else is involved</h2>
+  <ul>
+    <li><strong>Apple</strong> sells and processes purchases, runs the App Store and TestFlight, stores your iCloud backups if you use them, and sends us crash reports if you opt in. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</li>
+    <li><strong>GitHub</strong> hosts this website and may log visitors' IP addresses. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+    <li><strong>Porkbun</strong> registers the getsippy.app domain and forwards support email. <a href="https://porkbun.com/legal/agreement/privacy_policy">Porkbun Privacy Policy</a>.</li>
+    <li><strong>Google</strong> hosts the Gmail inbox that receives support email. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+  </ul>
+  <p>We don't sell or share personal information (as California law defines those terms). We don't use it for targeted advertising, and we don't work with ad networks or data brokers.</p>
 
-  <h2>Changes</h2>
-  <p>If this policy changes materially, we will update this page and the date above, and note it in the app.</p>
+  <h2>Do Not Track</h2>
+  <p>Neither Sippy nor getsippy.app tracks you over time or across other websites or apps, and no third party can do that through them. Because there is no tracking to turn off, Do Not Track and Global Privacy Control signals need no action from us. Every visitor is treated the same way.</p>
+
+  <h2 id="health-data">Health information</h2>
+  <p>Your water intake, weight, sex and activity level are health-related information. They stay on your iPhone and are not collected by us: we never receive, share or sell them. This includes “consumer health data” under Washington's My Health My Data Act and similar state laws. We don't collect any.</p>
+
+  <h2>If you're in the EU or UK</h2>
+  <ul>
+    <li><strong>Controller:</strong> Remmy Rivera, Florida, USA · <a href="mailto:support@getsippy.app">support@getsippy.app</a>.</li>
+    <li><strong>Support emails:</strong> used to answer you. Legal basis: our legitimate interest in replying, or, when your message is about your use of Sippy, carrying out our agreement with you (GDPR and UK GDPR Art. 6(1)(f) and 6(1)(b)).</li>
+    <li><strong>Crash reports and beta feedback from Apple:</strong> used to fix bugs. Legal basis: our legitimate interest in a working app (Art. 6(1)(f)).</li>
+    <li><strong>Website logs:</strong> kept by GitHub for security and to run the site. Legal basis: legitimate interests (Art. 6(1)(f)).</li>
+    <li><strong>Data on your phone:</strong> the app handles it on your device, and it is never sent to us. If the law treats this as our processing, the basis is providing the app you asked for (Art. 6(1)(b)). For optional weight and sex, the basis is your consent (Art. 6(1)(a) and 9(2)(a)), which you can withdraw anytime by clearing them.</li>
+    <li><strong>Recipients:</strong> Apple, GitHub, Porkbun and Google, as described above.</li>
+    <li><strong>International transfer:</strong> we are based in the United States, so anything you send us is processed in the US, by us and by those providers.</li>
+    <li><strong>Retention:</strong> support emails for no longer than 24 months after the conversation ends. Data on your phone stays until you delete it or the app. The logs keep only their most recent entries.</li>
+  </ul>
+
+  <h2>Your rights and choices</h2>
+  <ul>
+    <li><strong>Data on your phone:</strong> review and change it in the app (mostly in the You tab). Delete the app to erase it from your phone.</li>
+    <li><strong>Data we hold</strong>, such as support emails: email <a href="mailto:support@getsippy.app">support@getsippy.app</a> to see it, correct it, delete it or get a copy, or to restrict or object to how we use it. We reply within 30 days.</li>
+    <li><strong>EU and UK:</strong> you have the rights of access, rectification, erasure, restriction, objection and data portability. You can also complain to your local data protection authority (in the UK, the Information Commissioner's Office).</li>
+    <li><strong>Data Apple holds</strong>, such as your purchase history: visit <a href="https://privacy.apple.com/">privacy.apple.com</a>.</li>
+  </ul>
+  <p>We won't treat you differently for using any of these rights.</p>
+
+  <h2 id="children">Children and teens</h2>
+  <p>Sippy is for people 13 and older, and its App Store age rating is 13+. It is not directed to children under 13. The app doesn't collect personal information from anyone, including children; we only receive what someone chooses to send us, such as a support email. If you're 13 to 17, please use Sippy only with a parent or guardian's permission. Hard Mode is only for adults 18 and older (or the age of majority where you live).</p>
+  <p><strong>Age signals:</strong> in regions where Apple tells apps that local law requires an age check (for example, Texas), Sippy asks Apple's Declared Age Range feature for your age range. Apple may share an age category (for example, 13–15). Sippy uses it only to decide whether you're 18 or older, which decides whether Hard Mode is available, and keeps only that yes/no answer in memory while the app is open. It never stores, sends or logs your age information. If you decline to share, Hard Mode stays off (and is turned off if it was on). If Apple can't answer, for example while you're offline, Hard Mode can't be turned on until Sippy can check again. Everywhere else, Sippy doesn't ask, and Hard Mode asks you to confirm you're 18 or older (or the age of majority where you live).</p>
+  <p><strong>Parents:</strong> if you believe a child under 13 has emailed us, write to <a href="mailto:support@getsippy.app">support@getsippy.app</a> and we will delete it. You can also use Apple's Family Sharing and Ask to Buy to approve downloads and purchases.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>When we change this policy, we'll post the new version on this page and update the “Last updated” date at the top. If a change is material, we'll also say so in the App Store release notes for the Sippy update it comes with. If we ever add analytics, we will update this policy before that version ships.</p>
 
   <h2>Contact</h2>
-  <p><a href="mailto:support@getsippy.app"><strong>support@getsippy.app</strong></a></p>
+  <p>Remmy Rivera · Florida, USA · <a href="mailto:support@getsippy.app"><strong>support@getsippy.app</strong></a></p>
 </main>
-<footer><a href="/">getsippy.app</a> · <a href="/terms/">Terms of Use</a></footer>
+<footer>
+  <p><a href="/">getsippy.app</a> · <a href="/terms/">Terms of Use</a></p>
+  <p>© 2026 Remmy Rivera</p>
+</footer>
 </body>
 </html>
